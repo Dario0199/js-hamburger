@@ -1,11 +1,15 @@
 const menuHamburger = document .querySelector('.hamburger-menu')
-console.log('click');
 
 const hamburger = document .querySelector('.fa-bars')
 
+const exit = document .querySelector('.close');
+//Aprire l'hamburger menù
 hamburger.addEventListener ('click', function() {
-    console.log('click');
 
-    menuHamburger.classList.add(d-block)
-    
+    menuHamburger.classList.add('active')
+});
+//Chiudere l'hamburger menù
+exit.addEventListener ('click', function(){
+
+    menuHamburger.classList.remove('active')
 });
